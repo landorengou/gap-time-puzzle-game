@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数連鎖パズル</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">隙間時間ゲーム</p>
+          <h1>数連鎖パズル</h1>
+        </div>
+        <button id="start-btn" class="primary-btn" type="button">スタート</button>
+      </header>
+
+      <section class="hud">
+        <div class="stat">
+          <span class="label">スコア</span>
+          <span id="score">0</span>
+        </div>
+        <div class="stat">
+          <span class="label">時間</span>
+          <span id="time">90</span>
+        </div>
+        <div class="stat">
+          <span class="label">最高</span>
+          <span id="best">0</span>
+        </div>
+      </section>
+
+      <section class="board-wrap">
+        <div id="board" class="board" aria-label="ゲーム盤"></div>
+      </section>
+
+      <p id="status" class="status">スタートしてゲームを始めよう！</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
